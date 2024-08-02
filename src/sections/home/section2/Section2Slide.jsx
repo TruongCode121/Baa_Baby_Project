@@ -74,7 +74,7 @@ const Section2Slide = () => {
         </TitleComponent>
         {/* <SwiperComponent></SwiperComponent> */}
         {/* mobile */}
-        <div className="flex space-x-[0.88rem] sm:space-x-[0.75rem] -ml-[2.7rem] sm:ml-0 items-end mt-[1.5rem] lg:hidden">
+        <div className="flex space-x-[0.88rem] sm:space-x-[0.75rem] -ml-[3.5rem] sm:ml-0 items-end mt-[1.5rem] lg:hidden">
           <div className="flex-shrink-0 hidden sm:inline-block">
             <Image
               src={SlideSection2_2}

@@ -33,10 +33,15 @@ const Section6Index = () => {
   return (
     <section className="">
       <div className="lg:mt-[3.5rem] px-[0.62rem] lg:px-0 lg:ml-[9rem]">
-        <QuoteIcon className="lg:inline-block hidden"></QuoteIcon>
-        <QuoteIconMobile className="inline-block lg:hidden ml-[0.3rem] sm:ml-[1rem] scale-x-[1.2] sm:scale-x-[1.5] scale-y-[1.3] -mb-3"></QuoteIconMobile>
+        <div data-aos="fade-left">
+          <QuoteIcon className="lg:inline-block hidden"></QuoteIcon>
+          <QuoteIconMobile className="inline-block lg:hidden ml-[0.3rem] sm:ml-[1rem] scale-x-[1.2] sm:scale-x-[1.5] scale-y-[1.3] -mb-3"></QuoteIconMobile>{" "}
+        </div>
         <div className="lg:ml-[2.75rem]">
-          <h2 className="text-[1.0625rem] sm:text-[1.6rem] lg:text-[3.75rem] font-bold text-Loan-Baa-baa1 leading-[1.8125rem] sm:leading-[2.4125rem] lg:leading-[5.1875rem] w-full lg:w-[71.75rem] pl-[2.57rem] lg:pl-0 lg:pr-[2rem]  lg:mt-[1.63rem]">
+          <h2
+            data-aos="zoom-out"
+            className="text-[1.0625rem] sm:text-[1.6rem] lg:text-[3.75rem] font-bold text-Loan-Baa-baa1 leading-[1.8125rem] sm:leading-[2.4125rem] lg:leading-[5.1875rem] w-full lg:w-[71.75rem] pl-[2.57rem] lg:pl-0 lg:pr-[2rem]  lg:mt-[1.63rem]"
+          >
             Chăm sóc trẻ, yêu thương tận tâm -{" "}
             <span className="baa_baby  leading-[1.8125rem] lg:leading-[5.1875rem]">
               Baa Baby

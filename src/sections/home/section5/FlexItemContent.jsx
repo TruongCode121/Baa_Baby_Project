@@ -31,14 +31,16 @@ const FlexItemContent = () => {
   return (
     <section className="container_box_sectio5Flex px-[0.62rem] lg:px-0 lg:flex justify-between items-start">
       <div className="">
-        <TitleComponent
-          title="Trang chủ"
-          className={`${widhtItem} text-justify font-normal`}
-        >
-          Trang chủ Baa Baby là điểm giao tiếp đầu tiên và quan trọng nhất của
-          khách hàng khi lên website. Thiết kế của website có cấu trúc đơn giản
-          và dễ hiểu để khách hàng dễ dàng điều hướng trang web.
-        </TitleComponent>
+        <div data-aos="fade-up">
+          <TitleComponent
+            title="Trang chủ"
+            className={`${widhtItem} text-justify font-normal`}
+          >
+            Trang chủ Baa Baby là điểm giao tiếp đầu tiên và quan trọng nhất của
+            khách hàng khi lên website. Thiết kế của website có cấu trúc đơn
+            giản và dễ hiểu để khách hàng dễ dàng điều hướng trang web.
+          </TitleComponent>
+        </div>
         <div
           data-aos="fade-up"
           className={`${widhtItem}  lg:h-[24.9375rem] p-[0.5rem] lg:p-[1rem] rounded-[0.5rem] lg:rounded-[1.5rem] bg-[#FFFDFB] mt-[2rem] lg:mt-[3.81rem]`}
