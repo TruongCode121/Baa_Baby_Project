@@ -26,7 +26,7 @@ const Hero = () => {
             Manrope
           </h2>
         </div>
-        <div className="mt-[3.75rem] lg:mt-0 text-[1.5rem] lg:text-[2.8125rem] font-medium leading-normal pr-[1rem] sm:pr-0">
+        <div className="mt-[3.75rem] lg:mt-0 text-[1.5rem] sm:text-[1.4rem] lg:text-[2.8125rem] font-medium leading-normal pr-[1rem] sm:pr-0">
           <p
             ref={refHero3_Section3}
             className="uppercase opacity-100 font-bold mb-[1rem] lg:mb-[2.38rem]"
