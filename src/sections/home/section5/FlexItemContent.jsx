@@ -15,17 +15,19 @@ import "swiper/css/pagination";
 
 // Cấu hình Swiper để sử dụng Pagination
 import { Pagination } from "swiper/modules";
-import handleUseScrollTrigger from "@/hooks/useScrollTriggerFromTo";
-import { useEffect, useRef } from "react";
-
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import { useEffect } from "react";
+import Aos from "aos";
 
 const widhtItem = "w-full lg:w-[41.2875rem]";
 const widthItemSlideMobile =
   "w-[14.55rem] h-[27.3125rem] sm:h-[32.3125rem] sm:w-[21.2rem]";
 const FlexItemContent = () => {
+  useEffect(() => {
+    Aos.init({
+      // Cấu hình tùy chọn tại đây
+      duration: 1200,
+    });
+  }, []);
   return (
     <section className="container_box_sectio5Flex px-[0.62rem] lg:px-0 lg:flex justify-between items-start">
       <div className="">
@@ -38,6 +40,7 @@ const FlexItemContent = () => {
           và dễ hiểu để khách hàng dễ dàng điều hướng trang web.
         </TitleComponent>
         <div
+          data-aos="fade-up"
           className={`${widhtItem}  lg:h-[24.9375rem] p-[0.5rem] lg:p-[1rem] rounded-[0.5rem] lg:rounded-[1.5rem] bg-[#FFFDFB] mt-[2rem] lg:mt-[3.81rem]`}
         >
           <div className="overflow-hidden h-full w-full shadow_img_banner rounded-sm lg:rounded-[1rem]">
@@ -48,7 +51,7 @@ const FlexItemContent = () => {
             ></Image>
           </div>
         </div>
-        <div className="w-full lg:hidden">
+        <div data-aos="fade-up" className="w-full lg:hidden">
           <Swiper
             modules={[Pagination]}
             // pagination={{ clickable: true }}
@@ -77,6 +80,7 @@ const FlexItemContent = () => {
           </Swiper>
         </div>
         <div
+          data-aos="fade-up"
           className={`${widhtItem} lg:h-[71.25rem] mt-[2rem] lg:mt-[3.12rem] lg:inline-block hidden`}
         >
           <Image
@@ -89,6 +93,7 @@ const FlexItemContent = () => {
 
       <div className="">
         <div
+          data-aos="fade-up"
           className={`${widhtItem} lg:h-[72.25rem] mt-[1rem] lg:inline-block hidden`}
         >
           <Image
@@ -98,6 +103,7 @@ const FlexItemContent = () => {
           ></Image>
         </div>
         <div
+          data-aos="fade-up"
           className={`${widhtItem} lg:h-[33.3125rem] mt-[2rem] lg:mt-[5rem]`}
         >
           <Image

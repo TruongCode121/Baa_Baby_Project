@@ -11,6 +11,11 @@ import TitleComponent from "../TitleComponent";
 import Banner from "./Banner";
 
 const SectionIndex = () => {
+  const titleBannerSectionRef = handleUseScrollTrigger(0, 0, 100, 0, 1);
+  const childrenSectionRef = handleUseScrollTrigger(0, 0, 200, 0, 1);
+  const circleSectionRef = handleUseScrollTrigger(200, 0, 0, 0, 1);
+  const flexLeftSectionRef = handleUseScrollTrigger(-400, 0, 0, 0, 1);
+  const flexRightSectionRef = handleUseScrollTrigger(-200, 0, 0, 0, 1.5);
   return (
     <section className="relative">
       <div className="bg-Loan-Baa-Baa-baby w-full h-[8.0625rem] sm:h-[13rem] lg:h-[29.25rem]"></div>
@@ -20,7 +25,10 @@ const SectionIndex = () => {
           alt="bgImgSection"
           className="w-full h-full object-cover"
         ></Image>
-        <div className="size-[11.125rem] sm:size-[15rem] lg:size-[34.3125rem] rounded-full bg-Loan-Baa-bng-baa absolute -right-[20%] lg:-right-[43%] bottom-[-3rem] lg:top-[12%]"></div>
+        <div
+          ref={circleSectionRef}
+          className="size-[11.125rem] sm:size-[15rem] lg:size-[34.3125rem] rounded-full bg-Loan-Baa-bng-baa absolute -right-[20%] lg:-right-[43%] bottom-[-3rem] lg:top-[12%]"
+        ></div>
       </div>
 
       <div className="w-full absolute top-0">
@@ -28,6 +36,8 @@ const SectionIndex = () => {
           <Banner></Banner>
           <div className="mb-[3.12rem] lg:mb-[11.63rem]"></div>
           <TitleComponent
+            refTitle={titleBannerSectionRef}
+            refChildren={childrenSectionRef}
             title="Bối cảnh"
             className="lg:w-[44.6875rem] text-justify lg:text-left"
           >
@@ -42,14 +52,14 @@ const SectionIndex = () => {
           </TitleComponent>
           <div className="flex space-x-[0.69rem] lg:space-x-[2.5rem] mt-[1.5rem] lg:mt-[3.12rem]">
             <Image
-              // ref={refFlexLeft}
+              ref={flexLeftSectionRef}
               src={SectionImgLeft}
               alt="SectionImgLeft"
               className="w-[11rem] h-[9.6875rem] sm:w-[50%] sm:h-[15rem] lg:w-[37.25rem] lg:h-[32.9375rem]"
               priority
             ></Image>
             <Image
-              // ref={refFlexRight}
+              ref={flexRightSectionRef}
               src={SecionImgRight}
               alt="SecionImgRight"
               className="w-[8.25rem] h-[9.6875rem] sm:w-[40%] sm:h-[15rem] lg:w-[27.9375rem] lg:h-[33.0625rem]"

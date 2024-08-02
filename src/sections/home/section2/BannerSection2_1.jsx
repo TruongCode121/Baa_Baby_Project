@@ -1,13 +1,21 @@
 "use client";
 
 import handleUseScrollTrigger from "@/hooks/useScrollTriggerFromTo";
+import Aos from "aos";
 import Image from "next/image";
+import { useEffect } from "react";
 import { BannerImgSection2_1 } from "../../../../public";
 import TitleComponent from "../TitleComponent";
 
 const BannerSection2_1 = () => {
   const refTitleSection2 = handleUseScrollTrigger(0, 0, 100, 0, 0.7);
   const refChildrenSection2 = handleUseScrollTrigger(0, 0, 150, 0, 0.7);
+  useEffect(() => {
+    Aos.init({
+      // Cấu hình tùy chọn tại đây
+      duration: 1200,
+    });
+  }, []);
   return (
     <section className="text-center mt-[7.51rem] relative">
       <TitleComponent
@@ -27,7 +35,10 @@ const BannerSection2_1 = () => {
           className="w-full"
         ></Image>
       </div> */}
-      <div className="relative mt-[5.69rem] w-[43rem] h-[20.35281rem] lg:w-[72.625rem] lg:h-[34.375rem] flex flex-shrink-0 ml-[0.62rem] lg:ml-auto">
+      <div
+        data-aos="slide-up"
+        className="relative mt-[5.69rem] w-[43rem] h-[20.35281rem] lg:w-[72.625rem] lg:h-[34.375rem] flex flex-shrink-0 ml-[0.62rem] lg:ml-auto"
+      >
         <Image
           src={BannerImgSection2_1}
           alt="BannerImgSection2_1"

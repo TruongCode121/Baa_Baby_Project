@@ -36,21 +36,19 @@ const handleUseScrollTrigger = (
   scaleFrom,
   scaleTo,
   rotateFrom,
-  rotateTo,
-  opacityFrom = 0,
-  opacityTo = 1
+  rotateTo
 ) => {
   return useScrollTriggerFromTo(
     {
       x: xFrom,
       y: yFrom,
-      opacity: opacityFrom,
+      opacity: 0,
       scale: scaleFrom,
       rotate: rotateFrom,
     },
     {
       duration: duration,
-      opacity: opacityTo,
+      opacity: 1,
       y: yTo,
       x: xTo,
       scale: scaleTo,

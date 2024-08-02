@@ -1,7 +1,9 @@
 "use client";
 
 import handleUseScrollTrigger from "@/hooks/useScrollTriggerFromTo";
+import Aos from "aos";
 import Image from "next/image";
+import { useEffect } from "react";
 import { BgFlexItemSection2 } from "../../../../public";
 import TitleComponent from "../TitleComponent";
 import BannerSection2 from "./BannerSection2";
@@ -14,6 +16,14 @@ const Section2Index = () => {
   const titleRefVitri = handleUseScrollTrigger(-200, 0, 0, 0, 1);
   const refChildrenThuongHieu = handleUseScrollTrigger(200, 0, 0, 0, 1);
   const refCircleSec2 = handleUseScrollTrigger(-200, 0, 0, 0, 1);
+
+  useEffect(() => {
+    Aos.init({
+      // Cấu hình tùy chọn tại đây
+      duration: 1200,
+    });
+  }, []);
+
   return (
     <section className="w-full">
       <BannerSection2></BannerSection2>

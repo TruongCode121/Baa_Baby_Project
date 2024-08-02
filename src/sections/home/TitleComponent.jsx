@@ -1,5 +1,7 @@
 "use client";
 
+import handleUseScrollTrigger from "@/hooks/useScrollTriggerFromTo";
+
 const TitleComponent = ({
   textColor,
   refTitle,

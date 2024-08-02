@@ -15,6 +15,9 @@ import {
 } from "../../../../public";
 import TitleComponent from "../TitleComponent";
 
+import "aos/dist/aos.css"; // Import CSS của AOS
+import AOS from "aos";
+
 const imgData = [
   { img: SlideSection2_1 },
   { img: SlideSection2_2 },
@@ -46,19 +49,19 @@ const Section2Slide = () => {
     SetSlide1(btnSlide == 3 ? 0 : btnSlide + 1);
     SetSlide2(slide1 == 3 ? 0 : slide1 + 1);
     SetSlide3(slide2 == 3 ? 0 : slide2 + 1);
-    // SetSlide3(slide2 == 3 ? 0 : slide3 + 1);
-    // SetSlide3(btnSlide == 3 ? 2 : btnSlide - btnSlide);
   }, [btnSlide, slide1, slide2]);
-  console.log("slide1", slide1);
-  const slides = [
-    { id: 1, content: "Slide 1" },
-    { id: 2, content: "Slide 2" },
-    { id: 3, content: "Slide 3" },
-    { id: 4, content: "Slide 4" },
-  ];
+  useEffect(() => {
+    AOS.init({
+      // Cấu hình tùy chọn tại đây
+      duration: 1200,
+    });
+  }, []);
   return (
     <section className="w-full mt-[5.75rem] lg:mt-[9.06rem] relative lg:static lg:flex justify-between select-none overflow-hidden">
-      <div className="w-full lg:pt-[6.56rem] px-[0.62rem] lg:px-0">
+      <div
+        data-aos="fade-up"
+        className="w-full lg:pt-[6.56rem] px-[0.62rem] lg:px-0"
+      >
         <TitleComponent
           title="Khách hàng của BaaBaby"
           className=" lg:w-[33.75rem] text-justify"
@@ -166,7 +169,7 @@ const Section2Slide = () => {
           </button>
         </div>
       </div>
-      <div className="relative hidden lg:block">
+      <div data-aos="fade-left" className="relative hidden lg:block">
         <div className="w-[37.156rem] h-[46.30375rem] overflow-hidden ">
           {bigSlideData.map((item, index) => {
             if (btnSlide == index) {

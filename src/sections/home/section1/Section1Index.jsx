@@ -5,11 +5,11 @@ import Image from "next/image";
 import { BgImgSection1, ImageBgSection1 } from "../../../../public";
 
 const Section1Index = () => {
-  const refFlex1 = handleUseScrollTrigger(0, 0, 0, 0, 0.3, 0.5, 1);
-  const refFlex2 = handleUseScrollTrigger(0, 0, 0, 0, 0.6, 0.5, 1);
-  const refFlex3 = handleUseScrollTrigger(0, 0, 0, 0, 1, 0.5, 1);
-  const refFlexPc = handleUseScrollTrigger(0, 0, 0, 0, 1, 0.7, 1, 1);
-
+  const refFlexSection1 = handleUseScrollTrigger(0, 0, 0, 0, 0.3, 0.5, 1);
+  const refFlexSection1_2 = handleUseScrollTrigger(0, 0, 0, 0, 0.6, 0.5, 1);
+  const refFlexSection1_3 = handleUseScrollTrigger(0, 0, 0, 0, 1, 0.5, 1);
+  const refFlexPcSection1 = handleUseScrollTrigger(0, 0, 0, 0, 1, 0.7, 1, 1);
+  const refTitleSection1 = handleUseScrollTrigger(0, 0, 100, 0, 1);
   return (
     <section className="h-[33.9375rem] lg:h-[53.125rem] w-full relative">
       <Image
@@ -23,18 +23,21 @@ const Section1Index = () => {
         className="w-full h-full lg:hidden inline-block "
       ></Image>
       <div className="absolute top-[4.38rem] lg:top-[6.25rem] left-1/2 -translate-x-1/2">
-        <div className="text-center font-manrope text-[2.5rem] font-medium mb-[2.5rem] lg:mb-[4.31rem] text-white">
+        <div
+          ref={refTitleSection1}
+          className="text-center font-manrope text-[2.5rem] font-medium mb-[2.5rem] lg:mb-[4.31rem] text-white"
+        >
           Mục tiêu dự án
         </div>
         <div className="flex lg:hidden">
           <ItemContent
-            refContent={refFlex1}
+            refContent={refFlexSection1}
             className="size-[11.5625rem] -mr-[1.5rem] px-[2.44rem]"
           >
             <span className="w-[6.625rem]">Tăng lượt truy cập</span>
           </ItemContent>
           <ItemContent
-            refContent={refFlex2}
+            refContent={refFlexSection1_2}
             className="size-[11.5625rem] px-[2rem]"
           >
             <span className="w-[7.5625rem]">
@@ -43,12 +46,12 @@ const Section1Index = () => {
           </ItemContent>
         </div>
         <ItemContent
-          refContent={refFlex3}
+          refContent={refFlexSection1_3}
           className="size-[11.5625rem] px-[2.38rem] mx-auto -mt-[3rem] lg:hidden"
         >
           <span className="w-[6.625rem]">Tỷ lệ chuyển đổi CTR tăng</span>
         </ItemContent>
-        <div ref={refFlexPc} className="hidden lg:flex items-center">
+        <div ref={refFlexPcSection1} className="hidden lg:flex items-center">
           <ItemContent className="size-[26.0625rem] -mr-[3rem] px-[6.06rem]">
             <span className="w-[13.9375rem]">Tăng lượt truy cập</span>
           </ItemContent>

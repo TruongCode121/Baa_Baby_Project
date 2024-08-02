@@ -1,8 +1,10 @@
 "use client";
 
+import handleUseScrollTrigger from "@/hooks/useScrollTriggerFromTo";
 import Image from "next/image";
 import { BgBannerTopa } from "../../../../public";
 const BannerTopIndex = () => {
+  const titleBannerTopRef = handleUseScrollTrigger(0, 0, 200, 0, 1);
   return (
     <section className="h-[100vh] relative font-manrope -mb-[1px]">
       <div className="h-[3rem] sm:h-[4rem] block xl:hidden"></div>
@@ -17,7 +19,10 @@ const BannerTopIndex = () => {
       <div className="over_bannerTop_mobie lg:over_bannerTop"></div>
 
       <div className="px-[0.62rem] lg:px-0 lg:w-auto absolute top-[38%] sm:top-[35%] lg:top-auto lg:bottom-[4.31rem] lg:left-[6.25rem] transition-all duration-700">
-        <div className="lg:flex items-center lg:space-x-[9.12rem]">
+        <div
+          ref={titleBannerTopRef}
+          className="lg:flex items-center lg:space-x-[9.12rem]"
+        >
           <h1
             className=" w-[22.1875rem] lg:w-[47.25rem] text-[2rem] lg:text-[4.6875rem] font-bold
           leading-[2.8125rem] lg:leading-[5.3125rem] tracking-[-0.03125rem] text-white"

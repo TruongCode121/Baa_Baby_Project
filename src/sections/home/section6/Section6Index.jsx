@@ -19,9 +19,17 @@ import "swiper/css/pagination";
 // Cấu hình Swiper để sử dụng Pagination
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "./progessStyle.css";
+import Aos from "aos";
+import { useEffect } from "react";
 const sizeItem =
   "w-[14.05788rem] sm:w-[13rem] sm:h-[25rem] h-[28.6875rem] lg:w-[20.7625rem] lg:h-[42.74381rem] flex-shrink-0";
 const Section6Index = () => {
+  useEffect(() => {
+    Aos.init({
+      // Cấu hình tùy chọn tại đây
+      duration: 1200,
+    });
+  }, []);
   return (
     <section className="">
       <div className="lg:mt-[3.5rem] px-[0.62rem] lg:px-0 lg:ml-[9rem]">
@@ -37,7 +45,10 @@ const Section6Index = () => {
           </h2>
           <div className="lg:ml-[2.44rem] mt-[1.5rem] lg:mt-[3.75rem]">
             <Section6Grid></Section6Grid>
-            <div className="lg:w-[42.75rem] text-center mt-[4.38rem] lg:mt-[7.5rem] lg:ml-[14.44rem]">
+            <div
+              data-aos="zoom-out"
+              className="lg:w-[42.75rem] text-center mt-[4.38rem] lg:mt-[7.5rem] lg:ml-[14.44rem]"
+            >
               <TitleComponent title="Tối ưu Responsive" className="font-normal">
                 Với thiết kế UI responsive, người xem sẽ có một trải nghiệm
                 tương đồng trên điện thoại và các môi trường khác
@@ -70,7 +81,10 @@ const Section6Index = () => {
           }}
         >
           <SwiperSlide>
-            <div className={`mt-[1.5rem] lg:mt-0 ${sizeItem} `}>
+            <div
+              data-aos="zoom-in"
+              className={`mt-[1.5rem] lg:mt-0 ${sizeItem} `}
+            >
               <Image
                 src={Section6Slide4}
                 alt="Section6Slide1"
@@ -79,7 +93,7 @@ const Section6Index = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className={`lg:mt-[4.81rem] ${sizeItem}`}>
+            <div data-aos="zoom-in" className={`lg:mt-[4.81rem] ${sizeItem}`}>
               <Image
                 src={Section6Slide1}
                 alt="Section6Slide1"
@@ -88,7 +102,10 @@ const Section6Index = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className={`mt-[1.5rem] lg:mt-0 ${sizeItem}`}>
+            <div
+              data-aos="zoom-in"
+              className={`mt-[1.5rem] lg:mt-0 ${sizeItem}`}
+            >
               <Image
                 src={Section6Slide2}
                 alt="Section6Slide1"
@@ -97,7 +114,7 @@ const Section6Index = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className={`lg:mt-[4.81rem] ${sizeItem}`}>
+            <div data-aos="zoom-in" className={`lg:mt-[4.81rem] ${sizeItem}`}>
               <Image
                 src={Section6Slide3}
                 alt="Section6Slide1"
