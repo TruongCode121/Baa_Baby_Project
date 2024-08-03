@@ -19,7 +19,7 @@ import {
 } from "../../../../public";
 const Section5Index = () => {
   return (
-    <section className="bg-[rgba(250,212,227,0.3)] w-full mt-[6rem] lg:mt-[11.38rem] pt-[4.38rem] lg:pt-[12.19rem] pb-[6rem] lg:pb-[16rem] relative">
+    <section className="bg-[rgba(250,212,227,0.3)] w-full mt-[6rem] lg:mt-[9rem] pt-[4.38rem] lg:pt-[12.19rem] pb-[6rem] lg:pb-[16rem] relative">
       <div className="lg:container ">
         <FlexItemContent></FlexItemContent>
       </div>
