@@ -17,7 +17,7 @@ const FooterIndex = () => {
     });
   }, []);
   return (
-    <section className="mt-[4.38rem] lg:mt-[7.52rem] relative">
+    <section className="mt-[1.94rem] sm:mt-[4.38rem] lg:mt-[7.52rem] relative">
       <div className="bg_gradient absolute top-0  w-full h-[21.125rem] lg:h-[33.75rem]"></div>
       <div className="px-[0.62rem] lg:container top-[4.38rem] relative">
         <div
@@ -55,7 +55,7 @@ const FooterIndex = () => {
         </div>
 
         <div data-aos="fade-up">
-          <QuoteFooter className="mt-[4.38rem] lg:mt-[8rem]"></QuoteFooter>
+          <QuoteFooter className="mt-[4.38rem] mb-[0.5rem] lg:mb-0 lg:mt-[8rem] w-[2.7425rem] lg:w-[3.6875rem]"></QuoteFooter>
         </div>
         <div className="lg:ml-[4.5rem] font-manrope font-bold relative">
           <div
