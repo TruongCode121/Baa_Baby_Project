@@ -4,7 +4,7 @@ import Hero from "./Hero";
 
 const Section3Index = () => {
   return (
-    <section className="relative mt-[7.5rem]">
+    <section className="relative mt-[4.4rem] lg:mt-[7.5rem]">
       <div className="w-full h-[42rem] px-[0.62rem] lg:px-0 lg:h-[53.125rem] bg_section3 relative">
         <Hero></Hero>
         <TextBackgroundItem className="top-[17.31rem] lg:top-[5.31rem] left-[4.31rem] lg:left-auto lg:right-[0.69rem]"></TextBackgroundItem>
