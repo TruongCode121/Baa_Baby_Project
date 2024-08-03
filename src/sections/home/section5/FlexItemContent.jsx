@@ -59,7 +59,7 @@ const FlexItemContent = () => {
             // pagination={{ clickable: true }}
             spaceBetween={30}
             slidesPerView={1.5}
-            className="relative w-[22.5rem] sm:w-[33rem]  mt-[2rem]"
+            className="relative w-[22.5rem] sm:w-[33rem]  mt-[1rem]"
           >
             <SwiperSlide>
               <div className={`${widthItemSlideMobile} `}>
@@ -106,7 +106,7 @@ const FlexItemContent = () => {
         </div>
         <div
           data-aos="fade-up"
-          className={`${widhtItem} lg:h-[33.3125rem] mt-[2rem] lg:mt-[5rem]`}
+          className={`${widhtItem} lg:h-[33.3125rem] mt-[1rem] lg:mt-[5rem]`}
         >
           <Image
             src={GridSection5_4}

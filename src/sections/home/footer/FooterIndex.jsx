@@ -94,7 +94,7 @@ const FooterIndex = () => {
         </div>
       </div>
 
-      <div className="h-[7rem] lg:h-[15rem] "></div>
+      <div className="h-[7rem] lg:h-[15rem]"></div>
     </section>
   );
 };

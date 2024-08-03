@@ -32,11 +32,11 @@ const Section2Index = () => {
         <div className="relative">
           <div
             ref={refCircleSec2}
-            className="size-[17.25rem] lg:size-[34.3125rem] rounded-full absolute -bottom-[5rem] lg:bottom-[5.13rem] -left-[calc(28.33334%_+_1.8rem)] bg-[#FEF2F7] "
+            className="size-[17.25rem] lg:size-[34.3125rem] rounded-full absolute -bottom-[5rem] lg:bottom-[5.13rem]  -left-[calc(22.33334%_+_1.8rem)] lg:-left-[calc(28.33334%_+_1.8rem)] bg-[#FEF2F7] "
           ></div>
           <BannerSection2_1></BannerSection2_1>
         </div>
-        <div className="px-[0.62rem] lg:px-0 lg:flex justify-between items-center mt-[8.06rem]">
+        <div className="px-[0.62rem] lg:px-0 lg:flex justify-between items-center lg:mt-[8.06rem] mt-[10.06rem]">
           <TitleComponent
             refTitle={titleRefVitri}
             title="Vị trí thương hiệu"

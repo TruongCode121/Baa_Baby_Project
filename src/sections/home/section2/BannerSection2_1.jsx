@@ -37,7 +37,7 @@ const BannerSection2_1 = () => {
       </div> */}
       <div
         data-aos="slide-up"
-        className="relative mt-[5.69rem] w-[43rem] h-[20.35281rem] lg:w-[72.625rem] lg:h-[34.375rem] flex flex-shrink-0 ml-[0.62rem] lg:ml-auto"
+        className="relative mt-[1.5rem] lg:mt-[5.69rem] w-[43rem] h-[20.35281rem] lg:w-[72.625rem] lg:h-[34.375rem] flex flex-shrink-0 ml-[0.62rem] lg:ml-auto"
       >
         <Image
           src={BannerImgSection2_1}
