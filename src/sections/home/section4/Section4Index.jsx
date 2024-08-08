@@ -39,7 +39,7 @@ const Section4Index = () => {
             data-aos="fade-left"
             src={grid_mobile}
             alt="grid mobie"
-            className="w-[11.75rem] h-[23.42169rem] sm:w-1/2 sm:h-full lg:w-[18.875rem] lg:h-[43.4375rem] mx-auto lg:mx-0"
+            className="w-[11.75rem] h-[23.42169rem] sm:w-1/2 sm:h-full lg:w-[18.875rem] lg:h-[43.4375rem] mx-auto lg:mx-0 mt-[1rem] lg:mt-0"
           ></Image>
         </div>
       </div>
