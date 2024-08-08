@@ -17,8 +17,9 @@ const SectionIndex = () => {
   const flexLeftSectionRef = handleUseScrollTrigger(-400, 0, 0, 0, 1);
   const flexRightSectionRef = handleUseScrollTrigger(-200, 0, 0, 0, 1.5);
   return (
+    // bg-Loan-Baa-Baa-baby
     <section className="relative">
-      <div className="bg-Loan-Baa-Baa-baby w-full h-[8.0625rem] sm:h-[13rem] lg:h-[29.25rem]"></div>
+      <div className=" bg-[#f0608d] w-full h-[8.0625rem] sm:h-[13rem] lg:h-[29.25rem]"></div>
       <div className="w-full h-[36.9375rem] lg:w-[54rem] sm:h-[40rem] lg:h-[80.625rem] bg-white lg:ml-auto sm:mt-[2rem] lg:mt-[8.01rem] relative lg:pl-[7px]">
         <Image
           src={bgImgSection}

@@ -13,12 +13,12 @@ const Hero = () => {
     <section className="text-white absolute top-[3.12rem] lg:top-[17.56rem] lg:left-[6.25rem]">
       <div className="lg:flex items-start lg:space-x-[3.81rem]">
         <div>
-          <h1
+          <h2
             ref={refHero1_Section3}
             className="text-[7.5rem] lg:text-[11.25rem] leading-normal lg:leading-[11.25rem] font-extrabold"
           >
             Aa
-          </h1>
+          </h2>
           <h2
             ref={refHero2_Section3}
             className="text-[3.125rem] lg:text-[5.625rem] leading-normal font-bold lg:-mt-[1.25rem]"

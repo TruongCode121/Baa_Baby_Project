@@ -7,12 +7,11 @@ const BannerTopIndex = () => {
   const titleBannerTopRef = handleUseScrollTrigger(0, 0, 200, 0, 1);
   return (
     <section className="h-[100vh] relative font-manrope -mb-[1px]">
-      <div className="h-[3rem] sm:h-[4rem] block xl:hidden"></div>
       <div className="h-[calc(100vh_-_4rem)] lg:h-full lg:overflow-hidden">
         <Image
           src={BgBannerTopa}
           alt="BgBannerTop"
-          className="w-full lg:-mt-[2rem] h-[calc(100vh)] sm:h-[100vh] lg:h-[100vh] flex flex-shrink-0 xl:h-auto object-cover  "
+          className="w-full  h-[calc(100vh)] sm:h-[100vh] lg:h-[100vh] flex flex-shrink-0 xl:h-auto object-cover  "
           priority
         ></Image>
       </div>

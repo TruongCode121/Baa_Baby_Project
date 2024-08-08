@@ -53,7 +53,7 @@ const FlexItemContent = () => {
             ></Image>
           </div>
         </div>
-        <div data-aos="fade-up" className="w-full lg:hidden">
+        <div data-aos="fade-up" className="w-full lg:hidden mt-[1rem]">
           <Swiper
             modules={[Pagination]}
             // pagination={{ clickable: true }}

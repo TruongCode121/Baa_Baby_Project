@@ -10,13 +10,14 @@ import BannerSection2 from "./BannerSection2";
 import BannerSection2_1 from "./BannerSection2_1";
 import Section2FlexImg from "./Section2FlexImg";
 import Section2FlexItem from "./Section2FlexItem";
-import Section2Slide from "./Section2Slide";
+import ThumbsGallery from "./ThumbsGallery";
 
 const Section2Index = () => {
   const titleRefVitri = handleUseScrollTrigger(-200, 0, 0, 0, 1);
   const refChildrenThuongHieu = handleUseScrollTrigger(200, 0, 0, 0, 1);
   const refCircleSec2 = handleUseScrollTrigger(-200, 0, 0, 0, 1);
-
+  const refKhOfBaby = handleUseScrollTrigger(0, 0, 100, 0, 1);
+  const refContentKhOfBaby = handleUseScrollTrigger(0, 0, 150, 0, 1);
   useEffect(() => {
     Aos.init({
       // Cấu hình tùy chọn tại đây
@@ -28,7 +29,24 @@ const Section2Index = () => {
     <section className="w-full">
       <BannerSection2></BannerSection2>
       <div className="lg:container ">
-        <Section2Slide></Section2Slide>
+        <div className="relative  bg-[#FFFDFB] pb-[5rem] lg:pb-0">
+          <div className="lg:absolute lg:top-[6.56rem] lg:mt-0 mt-[5.75rem] px-[0.62rem] lg:px-0 pt-[1.38rem]  lg:pt-0 ">
+            <TitleComponent
+              refTitle={refKhOfBaby}
+              refChildren={refContentKhOfBaby}
+              title="Khách hàng của BaaBaby"
+              className=" lg:w-[33.75rem] text-justify"
+            >
+              <span className="font-normal">
+                Khách hàng của Baa Baby có thể bao gồm các bậc cha mẹ, gia đình
+                và người chăm sóc trẻ em, đặc biệt là những người quan tâm đến
+                chất lượng và an toàn của sản phẩm chăm sóc trẻ sơ sinh và trẻ
+                nhỏ.
+              </span>
+            </TitleComponent>
+          </div>
+          <ThumbsGallery></ThumbsGallery>
+        </div>
         <div className="relative">
           <div
             ref={refCircleSec2}

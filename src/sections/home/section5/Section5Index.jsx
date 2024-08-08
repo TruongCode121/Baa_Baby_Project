@@ -24,13 +24,12 @@ const Section5Index = () => {
         <FlexItemContent></FlexItemContent>
       </div>
 
-      <div className="w-full ">
+      <div className="w-full mt-[2.5rem] lg:mt-[6.81rem]">
         <Swiper
           modules={[Autoplay, Pagination]}
           spaceBetween={0}
           slidesPerView={2}
-          // pagination={{ clickable: true }}
-          // scrollbar={{ draggable: true }}
+          speed={1000}
           autoplay={{ delay: 3000 }}
           loop={true}
           className="mt-[2.5rem] lg:mt-[7.5rem] z-10 w-[24rem] sm:w-full"

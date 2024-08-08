@@ -7,7 +7,7 @@ import Section4Index from "@/sections/home/section4/Section4Index";
 import Section5Index from "@/sections/home/section5/Section5Index";
 import Section6Index from "@/sections/home/section6/Section6Index";
 import FooterIndex from "@/sections/home/footer/FooterIndex";
-
+import "aos/dist/aos.css";
 export default function Home() {
   return (
     <main className="overflow-hidden font-manrope">

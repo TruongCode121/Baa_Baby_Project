@@ -55,13 +55,13 @@ const FooterIndex = () => {
         </div>
 
         <div data-aos="fade-up">
-          <QuoteFooter className="mt-[4.38rem] mb-[0.5rem] lg:mb-0 lg:mt-[8rem] w-[2.7425rem] lg:w-[3.6875rem]"></QuoteFooter>
+          <QuoteFooter className="mt-[4.38rem] mb-[0.5rem] lg:mb-0 lg:mt-[6rem] w-[2.7425rem] lg:w-[3.6875rem]"></QuoteFooter>
         </div>
         <div className="lg:ml-[4.5rem] font-manrope font-bold relative">
           <div
             data-aos="fade-right"
             className="size-[20.0625rem] sm:size-[15.0625rem] lg:size-[32.3125rem] flex-shrink-0 rounded-full 
-          bg-[rgba(254,242,247,0.90)] absolute top-[2.2rem] lg:-top-[38%]
+          bg-[rgba(254,242,247,0.90)] absolute top-[2.2rem] lg:-top-[34%]
            -right-[63%] sm:-right-[30%] lg:-right-[33%]"
           ></div>
           <h4
@@ -85,7 +85,7 @@ const FooterIndex = () => {
             <div
               data-aos="fade-right"
               className="leading-[11.25rem] font-black lg:leading-[21.5625rem] text-[7.5rem] 
-            -ml-[11.5rem] sm:-ml-[3rem]
+            lg:-mt-[0.5rem]  -ml-[11.5rem] lg:ml-[10rem]
             lg:text-[14.375rem] text-[rgba(0,0,0,0.03)] lg:font-extrabold whitespace-nowrap tracking-[0.03594rem]"
             >
               BAA BABY

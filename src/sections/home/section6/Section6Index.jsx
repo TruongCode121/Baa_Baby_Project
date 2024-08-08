@@ -22,7 +22,7 @@ import "./progessStyle.css";
 import Aos from "aos";
 import { useEffect } from "react";
 const sizeItem =
-  "w-[14.05788rem] sm:w-[13rem] sm:h-[25rem] h-[28.6875rem] lg:w-[20.7625rem] lg:h-[42.74381rem] flex-shrink-0";
+  "w-[14.55788rem] sm:w-[13rem] sm:h-[25rem] h-[29.1875rem] lg:w-[20.7625rem] lg:h-[42.74381rem] flex-shrink-0 lg:ml-[0.62rem] ml-[1rem]";
 const Section6Index = () => {
   useEffect(() => {
     Aos.init({
@@ -31,7 +31,7 @@ const Section6Index = () => {
     });
   }, []);
   return (
-    <section className="">
+    <section className="" data-aos="fade-left">
       <div className="lg:mt-[3.5rem] px-[0.62rem] lg:px-0 lg:ml-[9rem]">
         <div data-aos="fade-left">
           <QuoteIcon className="lg:inline-block hidden"></QuoteIcon>
@@ -62,13 +62,15 @@ const Section6Index = () => {
           </div>
         </div>
       </div>
-      <div className="w-full pl-[1rem] sm:pl-[0.62rem] lg:pl-0 lg:container  mt-[2rem] lg:mt-[4.25rem] ">
+      <div className="w-full  lg:pl-0 lg:container  mt-[2rem] lg:mt-[4.25rem] ">
         <Swiper
           modules={[Pagination, Autoplay]}
           pagination={{ clickable: true, type: "progressbar" }}
           spaceBetween={0}
           slidesPerView={1.3}
-          className="select-none w-[22.5rem] sm:w-full lg:w-[93rem] "
+          autoplay={{ delay: 1000, disableOnInteraction: false }}
+          speed={1000}
+          className="select-none w-[23.2rem] lg:pr-0 sm:w-full lg:w-[93rem]"
           breakpoints={{
             // khi màn hình >= 640px
             240: {
@@ -88,7 +90,7 @@ const Section6Index = () => {
           <SwiperSlide>
             <div
               data-aos="zoom-in"
-              className={`mt-[1.5rem] lg:mt-0 ${sizeItem} `}
+              className={`mt-[1.5rem] lg:mt-0 ${sizeItem}   `}
             >
               <Image
                 src={Section6Slide4}

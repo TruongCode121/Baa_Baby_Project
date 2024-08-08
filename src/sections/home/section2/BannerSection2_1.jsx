@@ -17,7 +17,7 @@ const BannerSection2_1 = () => {
     });
   }, []);
   return (
-    <section className="text-center mt-[7.51rem] relative">
+    <section className="text-center mt-[4.37rem] relative">
       <TitleComponent
         refTitle={refTitleSection2}
         refChildren={refChildrenSection2}
